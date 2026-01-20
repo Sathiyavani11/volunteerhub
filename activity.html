@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Activity List | VolunteerHub</title>
+<style>
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background:#f4f6f8;
+}
+
+/* Sidebar */
+.sidebar{
+width:230px;
+height:100vh;
+background:#2e7d32;
+color:white;
+position:fixed;
+padding:20px;
+}
+.sidebar h2{
+text-align:center;
+margin-bottom:30px;
+}
+.sidebar a{
+display:block;
+color:white;
+text-decoration:none;
+padding:10px;
+margin:8px 0;
+border-radius:5px;
+}
+.sidebar a:hover
+
+/* Main */
+.main{
+margin-left:260px;
+padding:20px;
+}
+
+/* Table */
+table{
+width:100%;
+background:white;
+border-collapse:collapse;
+border-radius:8px;
+overflow:hidden;
+box-shadow:0 2px 6px rgba(0,0,0,0.1);
+}
+th,td{
+padding:12px;
+text-align:center;
+}
+th{
+background:#2e7d32;
+color:white;
+}
+tr:nth-child(even){
+background:#f2f2f2;
+}
+
+/* Status */
+.active{
+color:green;
+font-weight:bold;
+}
+.completed{
+color:blue;
+font-weight:bold;
+}
+.upcoming{
+color:orange;
+font-weight:bold;
+}
+
+/* Button */
+.btn{
+padding:6px 12px;
+background:#2e7d32;
+color:white;
+border:none;
+border-radius:4px;
+cursor:pointer;
+}
+.btn:hover </style>
+
+</head>
+<body>
+
+<!-- Sidebar -->
+
+<div class="sidebar">
+    <h2>VolunteerHub</h2>
+    <a href="#">Dashboard</a>
+    <a href="#">Volunteer List</a>
+    <a href="#">Activity List</a>
+    <a href="#">Assign Activities</a>
+    <a href="#">Attendance</a>
+    <a href="#">Certificates</a>
+    <a href="#">Reports</a>
+    <a href="#">Settings</a>
+    <a href="#">Help</a>
+</div>
+
+<!-- Main Content -->
+
+<div class="main">
+    <h1>Activity List</h1>
+
+```
+<table>
+    <tr>
+        <th>Activity ID</th>
+        <th>Activity Name</th>
+        <th>Date</th>
+        <th>Location</th>
+        <th>Status</th>
+        <th>Action</th>
+    </tr>
+
+    <tr>
+        <td>A001</td>
+        <td>Beach Cleanup</td>
+        <td>20 Jan 2026</td>
+        <td>Chennai</td>
+        <td class="completed">Completed</td>
+        <td><button class="btn">View</button></td>
+    </tr>
+
+    <tr>
+        <td>A002</td>
+        <td>Tree Plantation</td>
+        <td>25 Jan 2026</td>
+        <td>Salem</td>
+        <td class="active">Active</td>
+        <td><button class="btn">View</button></td>
+    </tr>
+
+    <tr>
+        <td>A003</td>
+        <td>Blood Donation Camp</td>
+        <td>02 Feb 2026</td>
+        <td>Madurai</td>
+        <td class="upcoming">Upcoming</td>
+        <td><button class="btn">View</button></td>
+    </tr>
+
+    <tr>
+        <td>A004</td>
+        <td>Food Distribution</td>
+        <td>05 Feb 2026</td>
+        <td>Trichy</td>
+        <td class="upcoming">Upcoming</td>
+        <td><button class="btn">View</button></td>
+    </tr>
+</table>
+</div>
+</body>
+</html>
