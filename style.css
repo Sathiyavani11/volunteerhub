@@ -1,0 +1,152 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, sans-serif;
+}
+body{
+  display:flex;
+  min-height:100vh;
+}
+.sidebar{
+  width:220px;
+  background:#2c3e50;
+  color:white;
+  padding:20px;
+}
+.sidebar h2{
+  text-align:center;
+  margin-bottom:20px;
+}
+.sidebar a{
+  display:block;
+  color:white;
+  text-decoration:none;
+  padding:10px;
+  margin:5px 0;
+  border-radius:5px;
+}
+.sidebar a:hover{
+  background:#1abc9c;
+}
+.main{
+  flex:1;
+  padding:20px;
+  background:#ecf0f1;
+}
+.card{
+  background:white;
+  padding:20px;
+  border-radius:10px;
+  box-shadow:0 0 10px rgba(0,0,0,0.1);
+  
+}
+
+/* Login */
+.login-box{
+  width:300px;
+  margin:100px auto;
+  background:white;
+  padding:20px;
+  border-radius:10px;
+  text-align:center;
+  box-shadow:0 0 10px rgba(0,0,0,0.2);
+}
+.login-box input{
+  width:100%;
+  padding:10px;
+  margin:10px 0;
+}
+.login-box button{
+  width:100%;
+  padding:10px;
+  background:#1abc9c;
+  border:none;
+  color:white;
+  font-size:16px;
+}
+
+/* Mobile */
+@media(max-width:768px){
+  body{flex-direction:column;}
+  .sidebar{
+    width:100%;
+    display:flex;
+    overflow-x:auto;
+  }
+  .sidebar a{
+    flex:1;
+    font-size:12px;
+    text-align:center;
+  }
+}
+
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Full screen */
+body {
+  min-height: 100vh;
+}
+
+/* Main dashboard */
+.dashboard-main {
+  min-height: 100vh;          /* full screen height */
+  width: 100%;
+  padding: 20px;
+}
+
+/* Boxes layout */
+.box-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin: 20px 0;
+}
+
+/* Box style */
+.box {
+  background: #eaeaea;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* Card */
+.card {
+  background: #e6e7e9;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* List */
+.card ul {
+  list-style: none;
+}
+
+.card ul li {
+  padding: 8px 0;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .box-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+  .box-container {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-main {
+    padding: 10px;
+  }
+}
